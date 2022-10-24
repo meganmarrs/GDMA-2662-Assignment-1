@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+        - Footer
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+    3.0 - GENERIC
+-------------------------------------------------------------- */
+
+/* ----- UNIVERSAL ----- */
+
+* {
+        font-family: 'Source Sans Pro', sans-serif;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+html {
+        color: #3F3C45;
+        font-size: 16px;
+        line-height: 28px;
+}
+
+/*--------------------------------------------------------------
+    4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+/* ----- TYPOGRAPHY ----- */
+
+span,
+button {
+        color: #FE8360;
+}
+
+/* ----- FOOTER ----- */
+
+footer nav,
+h3 {
+        color: #fff;
+}
+
+footer span {
+        color: #B6BCC7;
+}
+
+footer {
+        background-color: #4D515C;;
+}
+
+
+
+/*--------------------------------------------------------------
+    5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/* ----- FRAMEWORK ----- */
+.wrapper {
+        width: 1024px;
+        margin: 0 auto;
+}
+
+.row {
+        display: flex;
+        justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+/* ----- NAVIGATION ----- */
+
+header nav {
+        background-color: #FE8360;
+}
+
+header li {
+        display: inline-block;
+}
+
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITIES
+-------------------------------------------------------------- */
+
+/* ----- ALIGNMENT ----- */
