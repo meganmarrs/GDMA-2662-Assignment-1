@@ -43,10 +43,19 @@ html {
 
 /* ----- TYPOGRAPHY ----- */
 
-span,
-button {
+span {
         color: #FE8360;
 }
+
+h1,
+h2,
+h3,
+header #bg-blue p,
+header nav,
+header #bg-orange p {
+        text-transform: uppercase;
+}
+
 
 /* ----- FOOTER ----- */
 
@@ -60,7 +69,7 @@ footer span {
 }
 
 footer {
-        background-color: #4D515C;;
+        background-color: #4D515C;
 }
 
 
@@ -86,7 +95,8 @@ footer {
 
 /* ----- NAVIGATION ----- */
 
-header nav {
+header nav,
+button {
         background-color: #FE8360;
 }
 
@@ -94,6 +104,18 @@ header li {
         display: inline-block;
 }
 
+/* ----- HOME ----- */
+
+
+
+
+
+/* ----- BENEFITS ----- */
+
+
+
+
+/* ----- HOSTING ----- */
 
 
 /*--------------------------------------------------------------
@@ -101,3 +123,13 @@ header li {
 -------------------------------------------------------------- */
 
 /* ----- ALIGNMENT ----- */
+
+#bg-blue {
+        background-color: #51CCF8;
+}
+
+#bg-orange {
+        background-color: #FE8360;
+        
+}
+
