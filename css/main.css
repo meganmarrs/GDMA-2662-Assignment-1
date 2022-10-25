@@ -8,13 +8,16 @@
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors
+        - Hero
         - Footer
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
-        - Navigation 
+        - Navigation
+        
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Alignment	    
+        - Alignment
+        - Images	    
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
     3.0 - GENERIC
@@ -45,6 +48,12 @@ html {
 
 span {
         color: #FE8360;
+        font-size: 40px;
+}
+
+#bg-gray span,
+footer span {
+        font-size: 15px;
 }
 
 h1,
@@ -56,14 +65,23 @@ header #bg-orange p {
         text-transform: uppercase;
 }
 
-
-/* ----- FOOTER ----- */
-
+h3,
+#bg-hero p,
 footer nav,
-h3 {
+#bg-orange,
+#bg-blue {
         color: #fff;
 }
 
+
+/* ----- HERO ----- */
+.row h1 {
+        margin: 0;
+}
+
+
+
+/* ----- FOOTER ----- */
 footer span {
         color: #B6BCC7;
 }
@@ -104,18 +122,10 @@ header li {
         display: inline-block;
 }
 
-/* ----- HOME ----- */
+nav ul {
+        margin-bottom: 0px;
+}
 
-
-
-
-
-/* ----- BENEFITS ----- */
-
-
-
-
-/* ----- HOSTING ----- */
 
 
 /*--------------------------------------------------------------
@@ -126,10 +136,38 @@ header li {
 
 #bg-blue {
         background-color: #51CCF8;
+        padding: 40px;      
 }
 
 #bg-orange {
         background-color: #FE8360;
-        
+        padding: 40px;       
 }
+
+#bg-gray {
+        background-color: #E7F5F8;
+        padding: 5px;
+}
+
+/* ----- IMAGES ----- */
+#bg-hero {
+        background: url(../img/bg-lap-top.jpg) center no-repeat ;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        padding: 150px;
+}
+
+#person-laptop {
+        background: url(../img/person-lap-top.jpg) center no-repeat;
+        background-size: contain;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        padding: 80px;
+}
+
 
