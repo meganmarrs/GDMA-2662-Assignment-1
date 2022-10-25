@@ -40,7 +40,7 @@
     </header>
 
     <main>
-        <div id="bg-gray"> 
+        <section id="bg-gray"> 
             <div class="wrapper row">
                 <section>
                     <span class="fa-solid fa-magnifying-glass"></span>
@@ -49,35 +49,37 @@
                     </header>
                 </section>
                 
-                <form>
-                    <label>
-                        <input type="text" name="domain-name" placeholder="Enter your domain name"> 
-                    </label>
-
-                    <select name="year" id="year">
-                        <option disabled selected checked value="">Year (0-1)</option>
-                        <option value="0-1">0-1 years</option>
-                        <option value="1-2">1-2 years</option>
-                        <option value="3-5">3-5 years</option>
-                        <option value="5+">5+ years</option>
-                    </select>
-
-                    <select name="com" id="com">
-                        <option disabled selected checked value="">.com</option>
-                        <option value="com">.com</option>
-                        <option value="org">.org</option>
-                        <option value="net">.net</option>
-                        <option value="gov">.gov</option>
-                        <option value="edu">.edu</option>
-                    </select>
-
-                    <p><button type="search" form="">Search</button></p> <!--UPPERCASE in CSS-->
-
-                </form>
+                <div class="row">
+                    <form>
+                        <label for="domain-name" class="sr-only"> Search Your Domain</label>
+                            <input type="text" name="domain-name" placeholder="Enter your domain name"> 
+                        
+                        <label for="duration"></label>
+                        <select name="duration" id="duration">
+                            <option selected checked value="">Year (0-1)</option>
+                            <option value="0-1">0-1 years</option>
+                            <option value="1-2">1-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5+">5+ years</option>
+                        </select>
+    
+                        <label for="extension"></label>
+                        <select name="extension" id="extension">
+                            <option selected checked value="">.com</option>
+                            <option value="com">.com</option>
+                            <option value="org">.org</option>
+                            <option value="net">.net</option>
+                            <option value="gov">.gov</option>
+                            <option value="edu">.edu</option>
+                        </select>
+    
+                        <p><button type="search" form="">Search</button></p> <!--UPPERCASE in CSS-->
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="wrapper row">
+        <div class="wrapper">
             <table>
                 <caption></caption>
                 <colgroup>
@@ -154,7 +156,7 @@
 
     <footer>
         <div class="wrapper row">
-            <div>
+            <section>
                 <h3>Quick Links</h3> <!--UPPERCASE in CSS-->
                 <nav>
                     <ul>
@@ -163,9 +165,9 @@
                         <li><a href="#">Hosting</a></li>
                     </ul>
                 </nav>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <h3>Contact Us</h3> <!--UPPERCASE in CSS-->
                 <address>
                     <ul>
@@ -174,9 +176,9 @@
                         <li><b>Phone: </b><a href="tel:+1800-123-4567">800-123-4567</a></li>
                     </ul>
                 </address>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <h3>Social Media</h3> <!--UPPERCASE in CSS-->
                 <ul>
                     <li><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook-f"></span><span class="sr-only">Facebook</span></a></li>
@@ -184,7 +186,7 @@
                     <li><a href="https://twitter.com/" target="_blank"><span class="fa-brands fa-twitter"></span><span class="sr-only">Twitter</span></a></li>
                     <li><a href="https://www.linkedin.com/" target="_blank"><span class="fa-brands fa-linkedin-in"></span><span class="sr-only">Linkedin</span></a></li>
                 </ul>
-            </div>
+            </section>
         </div>
     </footer>
 

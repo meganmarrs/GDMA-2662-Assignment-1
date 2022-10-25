@@ -14,10 +14,11 @@
         - Framework
 6.0 - Components: specific designed components
         - Navigation
+        - Form 
+        - Table
         
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Alignment
-        - Images	    
+        - Alignment	    
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
     3.0 - GENERIC
@@ -35,7 +36,6 @@
 }
 
 html {
-        color: #3F3C45;
         font-size: 16px;
         line-height: 28px;
 }
@@ -45,10 +45,33 @@ html {
 -------------------------------------------------------------- */
 
 /* ----- TYPOGRAPHY ----- */
+h1,
+h2,
+h3,
+header #bg-blue p,
+header nav,
+header #bg-orange p,
+#bg-hero,
+main p a,
+tfoot,
+thead tr:last-child,
+thead tr:nth-child(2)  {
+        text-transform: uppercase;
+}
 
-span {
-        color: #FE8360;
-        font-size: 40px;
+html,
+header > .row div:nth-child(2) > p a{
+        color: #3F3C45;
+}
+
+h3,
+#bg-hero p,
+footer nav,
+#bg-orange,
+#bg-blue,
+nav a,
+footer li {
+        color: #fff;
 }
 
 #bg-gray span,
@@ -56,38 +79,115 @@ footer span {
         font-size: 15px;
 }
 
-h1,
-h2,
-h3,
-header #bg-blue p,
-header nav,
-header #bg-orange p {
-        text-transform: uppercase;
+span {
+        color: #FE8360;
+        font-size: 40px;
 }
 
-h3,
-#bg-hero p,
-footer nav,
-#bg-orange,
-#bg-blue {
-        color: #fff;
+/* ----- FONT-SIZE & FONT-WEIGHT ----- */
+#bg-hero p b,
+h1 b,
+h2,
+h3 {
+        font-weight: 700;
 }
+
+
+#bg-hero p,
+/* main section:first-child h2, */
+#bg-blue h1,
+#bg-orange h1 {
+        font-weight: 300;
+}
+
+
+#bg-hero p b,
+#bg-blue h1,
+h1 b {
+        font-size: 50px;
+}
+
+#bg-hero p,
+#bg-blue h1,
+#bg-orange h1 {
+        font-size: 30px;
+}
+
+/* main section:first-child h2 b {
+        font-size: 35px;
+
+} */
+
+
+/* ----- OPTIMIZED HOSTING ----- */
+/* main section:first-child h2 {
+        font-size: 18px;
+}
+
+main section:first-child h2 b {
+        font-size: 35;
+        font-weight: 700;
+} */
+
 
 
 /* ----- HERO ----- */
+#bg-hero {
+        background: url(../img/bg-lap-top.jpg) center no-repeat ;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        padding: 150px;
+        text-align: center;
+}
+
 .row h1 {
         margin: 0;
+}
+
+#bg-gray section:first-child h2 {
+        margin-top: 0;
 }
 
 
 
 /* ----- FOOTER ----- */
-footer span {
+footer nav,
+address,
+footer ul {
+        margin-top: 0;
+}
+
+footer span,
+footer li a {
+        text-decoration: none;
         color: #B6BCC7;
+}
+
+footer span:hover,
+footer li a:hover {
+        color: #fff;     
+}
+
+h3,
+main h2 {
+        margin-bottom: 0;
 }
 
 footer {
         background-color: #4D515C;
+        padding: 10px;
+}
+
+footer ul {
+        list-style: none;
+        padding-left: 0;
+}
+
+footer section:last-child li {
+        display: inline-block;
 }
 
 
@@ -114,7 +214,8 @@ footer {
 /* ----- NAVIGATION ----- */
 
 header nav,
-button {
+button,
+tfoot a {
         background-color: #FE8360;
 }
 
@@ -124,7 +225,120 @@ header li {
 
 nav ul {
         margin-bottom: 0px;
+        padding: 0px 20px;
 }
+
+nav a,
+footer li {
+        text-decoration: none;
+        margin-right: 23px;
+}
+
+header > .row div:nth-child(2) > p a,
+header > .row div:nth-child(2) > p {
+        text-decoration: none;
+        font-size: 18px;
+}
+
+header > .row div:nth-child(2) > p a:hover {
+        color: #FE8360;
+}
+
+header > .row div:nth-child(2) > p {
+        margin-left: 50px;
+}
+
+footer nav ul {
+        padding: 0;
+}
+
+/* ----- BUTTONS ----- */
+
+main p a {
+        background-color: #FE8360;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 20px;
+}
+
+main p a:hover {
+        background-color: #51CCF8;
+        /* visibility:visible; 
+        -ms-transition: background-color 00.1s;
+        -webkit-transition: background-color 0.1s;
+        -moz-transition: background-color 0.1s;
+        -o-transition: background-color 0.1s;
+        transition: background-color 0.1s; */
+
+}
+ 
+
+
+
+
+
+
+/* ----- FORM ----- */
+label,
+button {
+        margin-left: 10px;
+}
+
+button {
+        color: #fff;
+        border: none;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+}
+
+button:hover {
+        background-color: #51CCF8;
+}
+
+form {
+        text-align: center;
+}
+
+form p {
+        display: inline-block;
+}
+
+
+
+
+
+
+
+
+/* ----- TABLE ----- */
+
+table {
+        margin: 0 auto;
+        border: solid #E0DFE1 3px;
+}
+
+tfoot a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 40px;
+}
+ 
+tfoot a:hover {
+        background-color: #51CCF8;
+}
+
+thead tr:last-child a {
+        background-color: #51CCF8;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 15px;
+}
+
+
 
 
 
@@ -133,6 +347,17 @@ nav ul {
 -------------------------------------------------------------- */
 
 /* ----- ALIGNMENT ----- */
+.sr-only {
+        position: absolute;
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+}
 
 #bg-blue {
         background-color: #51CCF8;
@@ -149,17 +374,6 @@ nav ul {
         padding: 5px;
 }
 
-/* ----- IMAGES ----- */
-#bg-hero {
-        background: url(../img/bg-lap-top.jpg) center no-repeat ;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        padding: 150px;
-}
-
 #person-laptop {
         background: url(../img/person-lap-top.jpg) center no-repeat;
         background-size: contain;
@@ -170,4 +384,8 @@ nav ul {
         padding: 80px;
 }
 
+main div:nth-child(2) div > span {
+        margin-top: 20px;
+        margin-right: 15px;
+}
 
