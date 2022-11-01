@@ -46,6 +46,7 @@ html {
 -------------------------------------------------------------- */
 b,
 h2,
+h2 b,
 h3 {
         font-weight: 700;
 }
@@ -64,10 +65,6 @@ thead tr:nth-child(2)  {
         text-transform: uppercase;
 }
 
-
-
-
-
 /* ----- TYPOGRAPHY ----- */
 
 h1 b {
@@ -81,7 +78,6 @@ h2 {
 }
 
 h2 b {
-        font-weight: 700;
         font-size: 35px;
 }
 
@@ -94,51 +90,7 @@ span {
         font-size: 35px;
 }
 
-/* ----- FOOTER ----- */
-footer nav,
-address,
-footer ul {
-        margin-top: 0;
-}
 
-footer span,
-footer li a {
-        text-decoration: none;
-        color: #B6BCC7;
-}
-
-footer span:hover,
-footer li a:hover {
-        color: #fff;     
-}
-
-h3,
-main h2 {
-        margin-bottom: 0;
-}
-
-footer {
-        background-color: #4D515C;
-        padding: 10px;
-        margin-top: 50px;
-}
-
-footer ul {
-        list-style: none;
-        padding-left: 0;
-}
-
-footer section:last-child li {
-        display: inline-block;
-}
-
-footer .row {
-        justify-content: left;
-}
-
-footer section {
-        margin-right: 100px;
-}
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -179,7 +131,7 @@ footer span {
 #bg-hero p,
 #bg-blue h1,
 #bg-orange h1,
-#bg-gray section:first-child h2 {
+#bg-gray h2 {
         font-weight: 300;
 }
 
@@ -189,18 +141,59 @@ footer span {
         font-size: 30px;
 }
 
-#bg-gray section:first-child h2 {
+#bg-gray h2 {
         font-size: 14px;
         line-height: 2px;
+        margin: 5px 0px;
 }
 
-#bg-gray section:first-child h2 b {
+#bg-gray h2 b { 
         font-size: 25px;
         line-height: 35px;
 }
 
 
+footer nav,
+address,
+footer ul {
+        margin-top: 0;
+}
+
+footer span,
+footer li a {
+        text-decoration: none;
+        color: #B6BCC7;
+}
+
+footer span:hover,
+footer li a:hover {
+        color: #fff;     
+}
+
+h3,
+main h2,
+header nav ul {
+        margin-bottom: 0;
+}
+
+#bg-blue,
+#bg-gray {
+        margin-bottom: 50px;   
+}
+
+#bg-blue,
+#bg-orange {
+        padding: 60px;  
+}
+
+#bg-blue h1,
+#bg-orange h1 {
+        text-align: left;
+        line-height: 42px;
+}
+
 /* ----- HERO ----- */
+
 #bg-hero {
         background: url(../img/bg-lap-top.jpg) center no-repeat ;
         background-size: cover;
@@ -208,7 +201,7 @@ footer span {
         -webkit-background-size: cover;
         -o-background-size: cover;
         -ms-background-size: cover;
-        padding: 150px 0px;
+        padding: 220px 0px 50px 0px;
         text-align: center;
         margin-bottom: 50px;
 }
@@ -221,21 +214,44 @@ header p a {
         color: #3F3C45;
 }
 
-#bg-blue h1,
-#bg-orange h1 {
-        text-align: left;
-        line-height: 42px;
+/* ----- FOOTER ----- */
+
+footer {
+        background-color: #4D515C;
+        padding: 10px;
+        margin-top: 50px;
 }
 
+footer ul {
+        list-style: none;
+        padding-left: 0;
+        font-style: normal;
+}
 
+footer section:last-child li {
+        display: inline-block;
+}
+
+footer .row {
+        justify-content: left;
+}
+
+footer section {
+        margin-right: 100px;
+}
 
 /* ----- NAVIGATION ----- */
-
 header nav a,
 button,
 tfoot a,
 header nav ul {
         background-color: #FE8360;
+}
+
+header p a,
+header p {
+        text-decoration: none;
+        font-size: 15px;
 }
 
 header > .row {
@@ -265,28 +281,17 @@ header li {
         display: inline-block;
 }
 
-
-header nav ul {
-        margin-bottom: 0px;
-}
-
-footer li {
-        text-decoration: none;
-        margin-right: 23px;
-}
-
-header p a,
-header p {
-        text-decoration: none;
-        font-size: 15px;
-}
-
 header p a:hover {
         color: #FE8360;
 }
 
 header .row {
         text-align: right;
+}
+
+footer li {
+        text-decoration: none;
+        margin-right: 23px;
 }
 
 footer nav ul {
@@ -298,7 +303,8 @@ main p a:hover,
 button:hover,
 tfoot a:hover,
 header p a:hover,
-header nav a:hover {
+header nav a:hover,
+header p {
         visibility:visible; 
         -ms-transition: background-color 00.8s;
         -webkit-transition: background-color 0.8s;
@@ -321,17 +327,42 @@ main p a:hover {
         background-color: #51CCF8;      
 }
  
+/* ----- SPACING ----- */
+#bg-orange {
+        background-color: #FE8360;    
+}
+
+#bg-blue {
+        background-color: #51CCF8;  
+}
 
 
+#bg-gray {
+        background-color: #E7F5F8;
+        padding: 20px;
+}
+
+main > .row {
+        margin-bottom: 30px;
+}
 
 
 /* ----- FORM ----- */
-#bg-gray section:first-child {
-        margin-bottom: 10px;
+input,
+#duration,
+#extension {
+        padding: 5px;
 }
 
-#bg-gray section.row {
-        align-items: center;
+#duration,
+#extension {
+        width: 150px;
+}
+
+input:focus,
+select:focus {
+        border: 1px #FE8360 solid;
+        outline: 0;
 }
 
 label,
@@ -348,6 +379,14 @@ button {
         text-transform: uppercase;
 }
 
+#bg-gray div:first-child {
+        margin-bottom: 10px;
+}
+
+#bg-gray div.row {
+        align-items: center;
+}
+
 button:hover {
         background-color: #51CCF8;
 }
@@ -360,31 +399,48 @@ form p {
         display: inline-block;
 }
 
-input,
-#duration,
-#extension {
-        padding: 5px;
-}
-
 input {
         width: 350px;
 }
 
-#duration,
-#extension {
-        width: 150px;
-}
-
-input:focus,
-select:focus {
-        border: 1px #FE8360 solid;
-        outline: 0;
-}
-
-
 
 
 /* ----- TABLE ----- */
+th b,
+tfoot {
+        font-weight: 700;
+}
+
+th,
+td {
+        border-right: solid #E0DFE1 3px; 
+        border-left: solid #E0DFE1 3px
+}
+
+thead tr:nth-child(2) th,
+thead tr:last-child th {
+        padding-top: 5px;
+}
+
+thead tr:first-child th {
+        padding-top: 20px;
+}
+
+tbody tr:first-child td {
+        padding-top: 30px;
+}
+
+tbody tr:last-child td {
+        padding-bottom: 30px;
+}
+
+tfoot tr:last-child td {
+        padding-bottom: 20px;
+}
+
+tbody td {
+        padding: 5px 30px;
+}
 
 table {
         width: 300px;
@@ -401,18 +457,9 @@ thead tr:last-child a {
         padding: 5px 15px;
 }
 
-th b,
-tfoot {
-        font-weight: 700;
-}
-
 tr:first-child th  {
         font-weight: 200;
         font-size: 50px;
-}
-
-tbody td {
-        padding: 5px 30px;
 }
 
 tbody tr {
@@ -421,12 +468,6 @@ tbody tr {
 
 tbody tr:first-child {
         border-top: 0;
-}
-
-th,
-td {
-        border-right: solid #E0DFE1 3px; 
-        border-left: solid #E0DFE1 3px
 }
 
 tfoot a {
@@ -444,28 +485,26 @@ tfoot a:hover {
 /* ----- POSITIONING ----- */
 #person-laptop {
         background: url(../img/person-lap-top.jpg) center no-repeat;
-        background-size: contain;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        padding: 80px;
-        width: 250px;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        width: 380px;
+        background-position-y: 4px;
 } 
 
 #person-laptop {
         position: relative;
-        bottom: 0;
-        right: 0;
+        top: 0;
+        left: 0;
 }
 
 #person-laptop > div {
         position: absolute;
-        bottom: 339px;
-        right: 216px;
+        top: -9px;
+        left: -13px;
 }
-
-
 
 /*--------------------------------------------------------------
     7.0 - UTILITIES
@@ -486,6 +525,7 @@ tfoot a:hover {
 
 .col-3 {
         width: 328px;
+        line-height: 28px;
 }
 
 .col-3 div:last-child p {
@@ -500,23 +540,10 @@ tfoot a:hover {
         font-weight: 700;
 }
 
-#bg-blue {
-        background-color: #51CCF8;
-        padding: 60px;  
-        margin-bottom: 50px;    
+#col-2 {
+        width: 612px;
 }
 
-#bg-orange {
-        background-color: #FE8360;
-        padding: 60px;  
-        
-}
-
-#bg-gray {
-        background-color: #E7F5F8;
-        padding: 20px;
-        margin-bottom: 50px;    
-}
 
 
 
